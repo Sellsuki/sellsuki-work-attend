@@ -9,9 +9,11 @@
         </a>
       </div>
     </nav>
-    <div class="container">
-      <router-view/>
-    </div>
+    <section class="hero">
+      <div class="hero-body">
+        <router-view/>
+      </div>
+    </section>
   </div>
 </template>
 

@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import 'bulma/css/bulma.min.css'
+import Buefy from 'buefy'
+import './assets/css/main.css'
+import 'buefy/lib/buefy.min.css'
 
+Vue.component(Buefy.Checkbox.name, Buefy.Checkbox)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
