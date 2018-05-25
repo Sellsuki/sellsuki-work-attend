@@ -1,11 +1,11 @@
 <template>
-  <nav class="navbar" style="box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.05); display: flex; justify-content: center;" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item">
-        <h1 class="title is-2">
-          Sellsuki Work Attend
-        </h1>
-      </a>
+  <nav class="navbar navbar--shadow dp-flex jtf-ct-center" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <h2 class="title is-4">Sellsuki Work Attend</h2>
+        </a>
+      </div>
     </div>
   </nav>
 </template>
@@ -16,3 +16,8 @@ export default {
 }
 </script>
 
+<style scoped>
+.navbar--shadow {
+  box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.05);
+}
+</style>
