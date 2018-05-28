@@ -1,7 +1,17 @@
 <template>
   <div class="container dp-flex jtf-ct-center">
     <div class="column is-half">
-      <textarea class="textarea" placeholder="10 lines of textarea" rows="10"></textarea>
+      <textarea class="textarea" rows="10" :value="selectedAccountIdArray"></textarea>
     </div>
   </div>
 </template>
+
+<script>
+import { mapState } from 'vuex'
+export default {
+  name: 'Result',
+  computed: {
+    ...mapState(['selectedAccountIdArray'])
+  }
+}
+</script>

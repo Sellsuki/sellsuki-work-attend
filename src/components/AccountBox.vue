@@ -2,7 +2,7 @@
   <div class="box">
     <article class="media">
       <div class="media-left">
-        <b-checkbox></b-checkbox>
+        <b-checkbox @input="addRemoveSelected(id)"></b-checkbox>
       </div>
       <div class="media-content">
         <div class="content">
@@ -19,7 +19,9 @@
 export default {
   name: 'AccountBox',
   props: {
-    name: String
+    name: String,
+    id: Number,
+    addRemoveSelected: Function
   }
 }
 </script>
