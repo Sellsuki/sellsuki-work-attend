@@ -14,6 +14,10 @@ const state = {
   selectedAccountIdArray: []
 }
 
+const getters = {
+  getSelectedAccount: state => state.accountList.filter(account => state.selectedAccountIdArray.indexOf(account.id) > -1).map(account => account.name)
+}
+
 const mutations = {
   SET_SELECTED_ACCOUNT_ID_ARRAY (state, payload) {
     state.selectedAccountIdArray = payload
@@ -23,7 +27,8 @@ const mutations = {
 const store = () => {
   return new Vuex.Store({
     state,
-    mutations
+    mutations,
+    getters
   })
 }
 

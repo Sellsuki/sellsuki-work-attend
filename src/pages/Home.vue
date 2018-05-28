@@ -20,17 +20,17 @@ export default {
   components: {
     AccountBox
   },
+  computed: {
+    ...mapState(['accountList'])
+  },
   data () {
     return {
       selectedIdList: []
     }
   },
-  computed: {
-    ...mapState(['accountList'])
-  },
   methods: {
     addRemoveSelected (newId) {
-      if (this.selectedIdList.indexOf(newId) >= 0) {
+      if (this.selectedIdList.indexOf(newId) > -1) {
         this.selectedIdList = this.selectedIdList.filter(id => id !== newId)
       } else {
         this.selectedIdList.push(newId)
