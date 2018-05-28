@@ -5,6 +5,7 @@ import Vuex from 'vuex'
 import App from './App'
 import router from './router'
 import store from './store'
+
 import Buefy from 'buefy'
 import './assets/css/main.css'
 import 'buefy/lib/buefy.min.css'
