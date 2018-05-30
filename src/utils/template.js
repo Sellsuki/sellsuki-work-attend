@@ -1,6 +1,8 @@
+import { postFormatTime } from './Datetime'
+
 const accountListString = (accountArray) => accountArray.reduce((acc, curr) => acc + curr + '\n', '')
 
-export const fbPost = (selectedArray, unselectedArray) => `
+export const fbPost = (selectedArray, unselectedArray) => `${postFormatTime()}
 ✔︎✔︎✔︎✔︎✔︎✔︎✔︎✔︎✔︎
 ✔︎  คนที่มาทัน 
 ✔︎✔︎✔︎✔︎✔︎✔︎✔︎✔︎✔︎

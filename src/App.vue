@@ -4,7 +4,7 @@
     <section class="hero">
       <div class="hero-body">
         <span class="tag is-large">
-          {{ formatTime(time) }}
+          {{ nowFormatTime(time) }}
         </span>
         <router-view/>
       </div>
@@ -14,7 +14,7 @@
 
 <script>
 import TopNavbar from './components/TopNavbar'
-import { formatTime } from './utils/Datetime'
+import { nowFormatTime } from './utils/Datetime'
 export default {
   name: 'App',
   components: {
@@ -31,7 +31,7 @@ export default {
     }
   },
   methods: {
-    formatTime
+    nowFormatTime
   }
 }
 </script>
