@@ -15,7 +15,8 @@ const state = {
 }
 
 const getters = {
-  getSelectedAccount: state => state.accountList.filter(account => state.selectedAccountIdArray.indexOf(account.id) > -1).map(account => account.name)
+  getSelectedAccount: state => state.accountList.filter(account => state.selectedAccountIdArray.indexOf(account.id) > -1).map(account => account.name),
+  getUnselectedAccount: state => state.accountList.filter(account => !(state.selectedAccountIdArray.indexOf(account.id) > -1)).map(account => account.name)
 }
 
 const mutations = {

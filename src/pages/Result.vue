@@ -1,7 +1,7 @@
 <template>
   <div class="container dp-flex jtf-ct-center">
     <div class="column is-half">
-      <textarea class="textarea" rows="10" :value="fbPost()"></textarea>
+      <textarea class="textarea" rows="10" :value="fbPost(selectedAccount, unselectedAccount)"></textarea>
     </div>
   </div>
 </template>
@@ -13,7 +13,8 @@ export default {
   name: 'Result',
   computed: {
     ...mapGetters({
-      accountNameList: 'getSelectedAccount'
+      selectedAccount: 'getSelectedAccount',
+      unselectedAccount: 'getUnselectedAccount'
     })
   },
   methods: {
